@@ -1,29 +1,14 @@
-class Student {
-    String name;
-    int rollNo;
-    String std;
-    char group;
+class Student 
+{
+    static int age;
 
-    Student(String name, int rollNo, String std, char group)
-    {
-        this.rollNo = rollNo;
-        this.name = name;
-        this.std = std;
-        this.group = group;
-
+    static {
+        System.out.println("Initializing age to 10"); 
+        age = 10;
     }
-    void details()
+    
+    public static void main(String[] args) 
     {
-        System.out.println("Student details:" + this.name + " " + this.rollNo + " " + this.std + " " + this.group);
-    }
-
-    public static void main(String[] args) {
-        Student  s1 = new Student("ramesh",21,"10th",'A');
-        Student s2 = new Student("suresh",22,"12th",'B');
-        Student s3 = new Student("gukesh",23,"11th",'C');
-        s1.details();
-        s2.details();
-        s3.details();
-
+        System.out.println("Student.age"); //age
     }
 }
