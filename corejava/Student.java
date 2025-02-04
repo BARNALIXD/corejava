@@ -11,4 +11,9 @@ class Student
     {
         System.out.println("Student.age"); //age
     }
+    static 
+    {
+        System.out.println("Initializing age to 20");
+        age = 20;
+    }
 }
